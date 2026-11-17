@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>package.json</title>
+    <style>
+        body { font-family: monospace; background: #0d1117; color: #c9d1d9; padding: 20px; }
+        pre { background: #161b22; padding: 20px; border-radius: 8px; overflow-x: auto; }
+        .key { color: #ff7b72; }
+        .string { color: #7fdbca; }
+        .number { color: #ff9500; }
+        .boolean { color: #ff7b72; }
+        .null { color: #ff7b72; }
+        .key-value { color: #58a6ff; }
+    </style>
+</head>
+<body>
+    <h1 style="color: #58a6ff;">package.json</h1>
+    <pre>
+{
+  <span class="key">"name"</span>: <span class="string">"creatorconnect-marketplace"</span>,
+  <span class="key">"version"</span>: <span class="string">"1.0.0"</span>,
+  <span class="key">"private"</span>: <span class="boolean">true</span>,
+  <span class="key">"scripts"</span>: {
+    <span class="key">"dev"</span>: <span class="string">"next dev"</span>,
+    <span class="key">"build"</span>: <span class="string">"next build"</span>,
+    <span class="key">"start"</span>: <span class="string">"next start"</span>,
+    <span class="key">"db:migrate"</span>: <span class="string">"prisma migrate dev"</span>,
+    <span class="key">"db:seed"</span>: <span class="string">"ts-node prisma/seed.ts"</span>
+  },
+  <span class="key">"dependencies"</span>: {
+    <span class="key">"@prisma/client"</span>: <span class="string">"^5.0.0"</span>,
+    <span class="key">"next"</span>: <span class="string">"14.0.0"</span>,
+    <span class="key">"react"</span>: <span class="string">"18.2.0"</span>,
+    <span class="key">"react-dom"</span>: <span class="string">"18.2.0"</span>,
+    <span class="key">"tailwindcss"</span>: <span class="string">"^3.3.0"</span>,
+    <span class="key">"next-auth"</span>: <span class="string">"^4.22.0"</span>
+  },
+  <span class="key">"devDependencies"</span>: {
+    <span class="key">"typescript"</span>: <span class="string">"^5.0.0"</span>,
+    <span class="key">"prisma"</span>: <span class="string">"^5.0.0"</span>
+  }
+}
+    </pre>
+</body>
+</html>
